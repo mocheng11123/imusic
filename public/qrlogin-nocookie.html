@@ -52,7 +52,7 @@
         if (statusRes.code === 803) {
           // 这一步会返回cookie
           clearInterval(timer)
-          alert('授权登录成功')
+          alert('授权登录成功啦')
           await getLoginStatus(statusRes.cookie)
           localStorage.setItem('cookie', statusRes.cookie)
         }
